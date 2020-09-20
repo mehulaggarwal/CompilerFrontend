@@ -1,0 +1,17 @@
+.header{
+    height: 50px;
+    width: 60%;/*800px;*/
+    color: black;
+    margin:20px;
+    margin-left:40px;
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 50px;
+        width: 60%; 
+        color: black;
+        margin:20px;
+        margin-left:40px;
+    }
+        
+  }

@@ -1,0 +1,44 @@
+<div class = "position">
+<div class = "editor">
+    <ngx-codemirror id = "codemirror" [(ngModel)] = "code" [options]="config" spellcheck="false"></ngx-codemirror>
+    <!-- <textarea [(ngModel)] = "code" spellcheck="false" id = "editor">{{code}}</textarea> -->
+</div>
+
+<input class = "commandLineArguments inputCommandLine" [(ngModel)] = "commandLineArguments" placeholder="Command line arguments goes here....">
+<button class = "btn" mat-raised-button color="primary" (click)="onClick()" [disabled] = "clicked" >Run code</button>
+
+<div>
+<table *ngIf = "outputObject.hasError" class = "error">
+    <thead>
+        <tr>
+            <th style="font-weight: 600; float: left; margin-bottom: 3%;">Error</th>
+        </tr>   
+    </thead>
+    <tbody>
+        <tr>
+            <td class="errorText">
+               {{outputObject.error}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table *ngIf = "outputObject.output" class = "output">
+    <thead>
+        <tr>
+            <th style="font-weight: 600; float: left; margin-bottom: 3%;">Output</th>
+            <th style="float: right; font-weight: 400;">{{outputObject.executionTime}}</th>
+            <th style="float: right;">Execution time:&nbsp;&nbsp;</th>
+        </tr>   
+    </thead>
+    <tbody>
+        <tr>
+            <td class="outputText">
+               {{outputObject.output}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<textarea style="overflow: auto;" placeholder="Your Program Inputs goes here....." [(ngModel)] = "input" class= "inputText" spellcheck="false"></textarea>
+</div>
+

@@ -1,0 +1,110 @@
+.editor{
+width: 70%;/*800px*/
+height:500px;
+background-color: black;
+font-size: 12px;
+margin-bottom: 20px;
+float: left;
+}
+.inputText{
+    height:100px;
+    width: 60%;/*800px*/
+    margin:10px;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 4px;
+}
+.inputText:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: #ab2cab73;
+    border-width: 0px;
+}
+.error{
+    padding: 10px;
+    background-color: #f2dedeab;
+    border-radius: 4px;
+    color:#b73329e0;
+    width: 70%;/*900px*/;
+}
+.output{
+    padding: 10px;
+    background-color: #e1f2deab;
+    border-radius: 4px;
+    color:darkgreen;
+    width: 70%;/*900px*/;
+}
+.text{
+    width:inherit;
+    height : 100px;
+    padding: 12px;
+}
+.btn{
+    float: left;
+    margin:10px;
+}
+.errorText{
+    white-space: pre;
+    font-family: fira code;
+    font-size:14px;
+    max-height: 100px;
+    overflow: auto;
+}
+.outputText{
+    white-space: pre;
+    font-family: fira code;
+    font-size:14px;
+    max-height: 100px;
+    overflow: auto;
+}
+.position{
+    margin-left:40px;
+}
+.commandLineArguments{
+    float: left;
+    margin:10px;
+}
+.inputCommandLine{
+    padding-left: 10px;
+    width: 20%;/*300px;*/
+    height : 40px;
+    border-radius: 5px;
+    border: 0.5px dotted;
+}
+.textareaInputDiv{
+    float: left;
+}
+@media only screen and (max-width: 600px) {
+    .editor{
+        width: 95%;
+        height:300px;
+        background-color: black;
+        font-size: 12px;
+        margin-bottom: 20px;
+        float: left;
+        }
+
+    .inputText{
+        height:100px;
+        width: 400px;
+        margin:10px;
+        margin-bottom: 20px;
+        padding:10px;
+      }
+    .output{
+        padding: 10px;
+        background-color: #e1f2deab;
+        border-radius: 4px;
+        color:darkgreen;
+        width: 95%;
+    }
+    .error{
+        width: 95%;
+    }
+    .inputCommandLine{
+        width: 170px;
+    }
+    .btn{
+        float: right;
+        margin:10px;
+    }
+  }
